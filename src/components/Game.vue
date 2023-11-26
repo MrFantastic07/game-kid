@@ -1,27 +1,35 @@
 <template>
-    <div class="mt-8 mb-8 ">
-        <h1 class="text-2xl font-sans font-semibold">{{ title }}</h1>
+    <div class="flex justify-center bg-sky-400 ">
+        <h1 class="font-mono text-white text-4xl font-bold mb-8 mt-4">{{ title }}</h1>
     </div>
-    <div class="mb-8 mx-20">
-        <p class="font-sans font-extralight">{{ description }}</p>
-    </div>
-    <div class="flex flex-wrap justify-center mb-8">
-    <iframe
-    width="1000"
-    height="600"
-    frameborder="0"
-    scrolling="no"
-    allowfullscreen="true"
-    :src="game" 
-    ></iframe>
-    </div>
-    <div class="flex justify-center mb-8">
-        <div class="border-b-4 w-96">
-            <h1 class="text-2xl font-sans mb-2">Instrucciones</h1>
+    <div class="flex">
+        <div>
+            <div class="shadow-2xl mt-10 h-64 rounded-lg mb-6 mx-20">
+                <h1 class="text-center text-red-600 text-2xl font-mono font-bold mb-2 mt-8">Instrucciones</h1>
+                <p class="font-sans font-bold mx-4">{{ description }}</p>
+            </div>
+            <a
+            class="flex justify-center mt-16"
+            href="/games-home"
+            >
+                <img class="mt-2"
+                src="../assets/home.png"
+                alt="Img Game"
+                width="200">    
+            </a>
         </div>
-    </div>
-    <div class="mx-20 mb-20">
-        <p class="font-sans font-extralight">{{ descriptionInst }}</p>
+        <div class="bg-red-500 flex flex-wrap justify-center m-4 rounded-2xl">
+            <div class="m-10">
+                <iframe
+                width="900"
+                height="600"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen="true"
+                :src="game" 
+                ></iframe>
+            </div>
+        </div>
     </div>
 </template>
 

@@ -8,6 +8,11 @@ const routes = [
     component: () => import('../views/Home.vue')
   },
   {
+    path: '/games-home',
+    name: 'games-home',
+    component: () => import('../views/GamesHome.vue')
+  },
+  {
     path: '/pacman-calculo',
     name: 'pacman-calculo',
     component: () => import('../views/Matematicas/PacmanCalculo.vue')
