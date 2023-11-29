@@ -2,11 +2,11 @@
     <div>
       <div class="bg-sky-400">
         <div class="flex justify-center my-6">
-          <h1 class="font-sans text-2xl font-bold mt-6 text-white">
-          Bienvenidos a Game Kid {{ state.nameKids }}! - Diversión y Aprendizaje para Niños Inteligentes</h1>
+          <h1 class="font-sans text-4xl font-bold mt-6 text-white">
+            ¡Aprende jugando! </h1>
         </div>
         <div class="flex justify-center mx-32">
-          <p class="text-white font-bold font-sans text-center mb-12">¡Hola y bienvenidos! En Game Kid, hemos creado un mundo mágico donde el aprendizaje y la diversión se unen para niños curiosos y creativos, entre las edades de 5 y 10 años. Creemos firmemente que el conocimiento y la imaginación son la clave para desbloquear un futuro brillante y lleno de posibilidades.</p>
+          <p class="text-white font-bold font-sans t text-2xl text-center mb-12"> El conocimiento, el juego y la imaginación desbloquean un futuro brillante y lleno de posibilidades.</p>
         </div>
       </div>
       <div class="flex flex-wrap justify-center mt-4 mb-6">
@@ -54,6 +54,11 @@
           >Colorear</button>
         </div>
       </div>
+      <Transition name="bounce" class="flex overflow-x-auto mx-32">
+      <div v-if="showcol">
+        <GamesCol />
+      </div>
+      </Transition>
       <div
       class="h-64 bg-lime-400"
       >
@@ -64,12 +69,14 @@
   <script>
   import GamesMat from '../components/GamesMat.vue'
   import GamesAbe from '../components/GamesAbe.vue'
+  import GamesCol from '../components/GamesCol.vue'
   import {state} from '../assets/store'
   
   export default {
     components: {
       GamesMat,
-      GamesAbe
+      GamesAbe,
+      GamesCol
     },
     data () {
       return {

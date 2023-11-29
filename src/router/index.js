@@ -13,6 +13,11 @@ const routes = [
     component: () => import('../views/GamesHome.vue')
   },
   {
+    path: '/nosotros',
+    name: 'nosotros',
+    component: () => import('../views/Nosotros.vue')
+  },
+  {
     path: '/pacman-calculo',
     name: 'pacman-calculo',
     component: () => import('../views/Matematicas/PacmanCalculo.vue')
@@ -76,6 +81,36 @@ const routes = [
     path: '/orden-alfabetico',
     name: 'orden-alfabetico',
     component: () => import('../views/Abecedario/OrdenAlfabetico.vue')
+  },
+  {
+    path: '/colorea-dinosaurios',
+    name: 'colorea-dinosaurios',
+    component: () => import('../views/Colorear/ColoreaDinosaurios.vue')
+  },
+  {
+    path: '/pizarra',
+    name: 'pizarra',
+    component: () => import('../views/Colorear/PizarraPixel.vue')
+  },
+  {
+    path: '/colorear-animales',
+    name: 'colorear-animales',
+    component: () => import('../views/Colorear/ColorearAnimales.vue')
+  },
+  {
+    path: '/colorea-numeros',
+    name: 'colorea-numeros',
+    component: () => import('../views/Colorear/ColorearNumeros.vue')
+  },
+  {
+    path: '/colorear-alfabeto',
+    name: 'colorear-alfabeto',
+    component: () => import('../views/Colorear/ColorearAlfabeto.vue')
+  },
+  {
+    path: '/pintar-primavera',
+    name: 'pintar-primavera',
+    component: () => import('../views/Colorear/PintarPrimavera.vue')
   }
 ]
 

@@ -42,7 +42,7 @@
             <div class=" rounded-lg">
               <div>
                 <a class="rounded-full font-sans font-bold text-green-500 hover:bg-green-800 hover:text-white px-12 shadow-lg py-1"
-                  href="/games-home"
+                  href="/nosotros"
                 >NOSOTROS</a>
               </div>
             </div>
