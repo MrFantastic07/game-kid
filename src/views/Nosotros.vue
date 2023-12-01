@@ -58,14 +58,6 @@ arte y creatividad para inspirar la imaginación y la expresión artística.
                 <p
                 class="font-semibold text-left"
                 >
-                • Fomentar la Creatividad: Además de las materias académicas, ofrecemos juegos de
-arte y creatividad para inspirar la imaginación y la expresión artística.
-                </p>
-            </div>
-            <div class="mt-2">
-                <p
-                class="font-semibold text-left"
-                >
                 • Adaptabilidad por Edad: Los juegos y actividades se adaptan a diferentes niveles de
 edad, asegurando que los niños encuentren desafíos apropiados para su desarrollo
 cognitivo.  
